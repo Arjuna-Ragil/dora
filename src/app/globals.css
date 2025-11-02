@@ -1,3 +1,21 @@
 @import "tailwindcss";
 
+@theme{
+    --color-primary: #034ED2;
+    --color-secondary: #6298E5;
 
+    --animate-appear: appear 0.1s ease-in-out forwards;
+
+    @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
