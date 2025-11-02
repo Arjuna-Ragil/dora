@@ -7,11 +7,11 @@ export default function Navbar(){
             "id": "/#hero"
         },
         {
-            "name": "Favorit",
+            "name": "Favorite",
             "id": "/#favorit"
         },
         {
-            "name": "Spot",
+            "name": "Spots",
             "id": "/#spot"
         },
         {
