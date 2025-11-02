@@ -1,6 +1,7 @@
 // src/app/favorites/page.js
 import Image from "next/image";
 import { MdFavorite } from "react-icons/md";
+import TopNavbar from "../../../component/TopNavbar";
 
 import image_contoh from "./assets/sumi_sumi.png"
 
@@ -29,20 +30,7 @@ export default function FavoritesPage() {
   return (
     <main className="w-full min-h-screen bg-white">
       {/* Navbar */}
-      <header className="flex justify-between items-center px-8 py-4 border-b border-b-blue-600">
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 bg-blue-600 rounded-full" />
-          <h1 className="font-semibold text-gray-700">App Name</h1>
-        </div>
-        <nav className="flex items-center gap-6 text-sm text-gray-600">
-          <a href="#">menu 1</a>
-          <a href="#">menu 2</a>
-          <a href="#">menu 3</a>
-          <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
-            <span className="text-gray-500">👤</span>
-          </div>
-        </nav>
-      </header>
+      <TopNavbar />
 
       {/* Heading */}
       <section className="text-center py-10">
