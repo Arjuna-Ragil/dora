@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme{
+    --color-primary: #034ED2;
+    --color-secondary: #6298E5;
+
     --animate-appear: appear 0.1s ease-in-out forwards;
 
     @keyframes appear {

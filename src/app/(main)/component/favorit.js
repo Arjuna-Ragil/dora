@@ -1,8 +1,13 @@
 export default function Favorit(){
     return(
-        <div className="min-h-screen h-full w-full grid grid-cols-2 p-15" id="favorit">
-            <div className="h-full w-full flex items-center justify-center bg-gray-800/20 border backdrop-blur-md rounded-3xl animate-appear [animation-timeline:view()]">
-                favorit
+        <div className="min-h-screen h-full w-full md:grid grid-cols-2 flex items-center justify-center p-15" id="favorit">
+            <div className="h-fit w-full flex flex-col self-center p-3 gap-10 items-center justify-center md:bg-gray-400/20 bg-gray-200/70 border backdrop-blur-md rounded-3xl animate-appear [animation-timeline:view()]">
+                <h1 className="md:text-3xl text-xl font-medium text-center">Your Favorite UMKM</h1>
+                <div className="flex flex-col gap-3 text-center md:text-xl">
+                    <p>Kamu ingin makan makanan enak kemaren yaa??</p>
+                    <p>Lihat daftar UMKM dan menu yang sudah kamu tandai sebagai favorit.</p>
+                </div>
+                <button className="bg-primary/20 hover:bg-primary/50 duration-150 border p-2 px-5 rounded-2xl">To Favorite</button>
             </div>
         </div>
     )

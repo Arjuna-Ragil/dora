@@ -3,7 +3,7 @@
 export default function Navbar(){
     const navs = [
         {
-            "name": "Top",
+            "name": "Home",
             "id": "/#hero"
         },
         {
