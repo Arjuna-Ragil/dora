@@ -1,6 +1,4 @@
-'use client'
-
-import { useRouter } from "next/navigation";
+import LoginBtn from "./subcomponent/loginBtn";
 
 export default function IdNavbar(){
   const navs = [
@@ -22,8 +20,6 @@ export default function IdNavbar(){
     },
   ]
 
-  const router = useRouter();
-
   return(
     <div className="w-full flex flex-row items-center justify-center fixed gap-5 p-3 bg-white/50 backdrop-blur-md z-50">
       {navs.map((nav) => (
@@ -31,7 +27,7 @@ export default function IdNavbar(){
               {nav.name}
           </a>
       ))}
-      <button onClick={() => router.push("/login")} className="bg-primary/50 hover:bg-primary duration-150 rounded-full p-1 text-white px-3">Get Started</button>
+      <LoginBtn text={"Get Started"} type={"navbar"}/>
     </div>
   )
 };
