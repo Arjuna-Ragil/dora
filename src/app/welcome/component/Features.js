@@ -30,7 +30,7 @@ export default function Features(){
         </div>
         <div className='grid lg:grid-cols-3 items-center justify-evenly sm:gap-7 px-3  gap-5 animate-slideUp [animation-timeline:view()] '>
           {features.map((feature) => (
-            <div className='flex flex-col bg-neutral-100 border h-full w-full border-gray-500 p-5 rounded-3xl gap-3 text-primary'>
+            <div key={feature.judul} className='flex flex-col bg-neutral-100 border h-full w-full border-gray-500 p-5 rounded-3xl gap-3 text-primary'>
               {feature.symbol}
               <h2 className='text-2xl font-medium'>{feature.judul}</h2>
               <p className='text-gray-800'>{feature.desc}</p>
