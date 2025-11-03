@@ -1,39 +1,41 @@
+import { Star, Tags, Users } from 'lucide-react'
 import React from 'react'
 
 export default function Features(){
+  const features = [
+    {
+      "symbol": <Star size={34}/>,
+      "judul": "Favoritkan UMKM Pilihanmu",
+      "desc": "Simpan usaha yang kamu suka biar gampang dikunjungi lagi nanti — dari warung langganan sampai tempat ngopi favoritmu."
+    },
+    {
+      "symbol": <Tags size={34}/>,
+      "judul": "Promo of The Day",
+      "desc": "Gak mau ketinggalan diskon? Lihat promo paling fresh dari pelaku UMKM sekitar Pintu Doraemon, langsung update tiap hari."
+    },
+    {
+      "symbol": <Users size={34}/>,
+      "judul": "Spot Nongkrong Favorit",
+      "desc": "Butuh tempat chill bareng temen? Temuin rekomendasi spot nongkrong lokal yang cozy dan ramah di kantong."
+    },
+  ]
+
   return (
     <div className='bg-white lg:h-screen h-full w-full flex flex-col items-center justify-center xl:p-40 sm:p-20 py-5 px-10 pt-15 2xl:px-45  gap-8' id='features'>
-        <div className='flex flex-col md:items-center justify-center gap-2 animate-slideDown [animation-timeline:view()]'>
-            <h2 className='sm:text-5xl text-3xl font-semibold md:text-center'>Discover Powerful Features</h2>
-            <p className='md:text-2xl text-sm md:text-center'>
-                Explore how our intelligent planning assistant helps you design better, 
-                greener, and smarter regions — effortlessly.
+        <div className='flex flex-col md:items-center justify-center gap-2'>
+            <h2 className='sm:text-5xl text-3xl font-semibold md:text-center text-primary'>Fitur yang Bikin Jelajah UMKM Makin Gampang</h2>
+            <p className='md:text-xl text-sm md:text-center'>
+                Gak perlu ribet cari tempat makan, nongkrong, atau promo menarik. Semua udah kami kumpulin biar kamu bisa dukung pelaku lokal dengan cara paling simpel.
             </p>
         </div>
         <div className='grid lg:grid-cols-3 items-center justify-evenly sm:gap-7 px-3  gap-5 animate-slideUp [animation-timeline:view()] '>
-            <div className='h-full  flex flex-col gap-2 bg-gray-300 p-5 sm:px-10 justify-evenly rounded-xl'>
-                <h3 className='md:text-2xl text-xl font-semibold'>Smart Terrain Analysis</h3>
-                <p className='2xl:text-lg sm:text-sm text-xs font-extralight'>
-                    Automatically analyze elevation, slope, and flood-prone areas to inform planning 
-                    decisions with real-world topography.
-                </p>
+          {features.map((feature) => (
+            <div className='flex flex-col bg-neutral-100 border h-full w-full border-gray-500 p-5 rounded-3xl gap-3 text-primary'>
+              {feature.symbol}
+              <h2 className='text-2xl font-medium'>{feature.judul}</h2>
+              <p className='text-gray-800'>{feature.desc}</p>
             </div>
-            
-            <div className='h-full flex flex-col gap-2 bg-gray-300 p-5 sm:px-10 rounded-xl justify-evenly'>
-                <h3 className='md:text-2xl text-xl font-semibold'>AI-Driven Zoning Layouts</h3>
-                <p className='2xl:text-lg sm:text-sm text-xs font-extralight'>
-                    Receive layout recommendations based on accessibility, land suitability, and environmental 
-                    considerations — all tailored to your region.
-                </p>
-            </div>
-
-            <div className='h-full flex flex-col gap-2 bg-gray-300 p-5 sm:px-10 rounded-xl justify-evenly'>
-                <h3 className='md:text-2xl text-xl font-semibold'>Smart Planning Chatbot</h3>
-                <p className='2xl:text-lg sm:text-sm text-xs font-extralight'>
-                    Ask questions like “Why is this zone industrial?” and get instant, explainable answers — no 
-                    more guesswork in spatial decisions.
-                </p>
-            </div>
+          ))}
         </div>
     </div>
   )
