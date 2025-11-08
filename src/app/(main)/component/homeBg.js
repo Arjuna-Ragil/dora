@@ -198,8 +198,8 @@ export default function HomeBg(){
             const groundMirror = new Reflector(floorGeometry, {
                 clipBias: 0.003,
                 textureWidth: window.innerWidth * window.devicePixelRatio,
-                textureHeight: window.innerHeight * window.devicePixelRatio,
-                color: 0x889999
+                textureHeight: window.innerHeight * window.devicePixelRatio,                                           
+                color: 0x889999        
             });
             groundMirror.rotation.x = -Math.PI / 2
             groundMirror.position.y = 0
