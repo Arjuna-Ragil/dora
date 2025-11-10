@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import Card from "../../../component/Card";
+import { RiDrinksFill } from "react-icons/ri";
+import { RiDrinksLine } from "react-icons/ri";
+
+
 import TopNavbar from "../../../component/TopNavbar";
 import Chip from "../../../component/Chip";
 import DropdownMenu from "../../../component/DropdownMenu";
@@ -16,16 +20,11 @@ const places = [
   { id: 7, name: "Sumi-sumi", desc: "Beef katsu and Pittu, Depok", image: "/assets/sumi_sumi.png" },
 ];
 
-const filter_chip = [
-  {
-    tipe: "Kategori",
-    filter: ["Makanan", "Minuman"],
-  },
-  {
-    tipe: "Harga",
-    filter: ["< 12000", "12000 > 20000"],
-  },
-];
+
+const categori = [
+  {tipe: "Makanan", on: RiDrinksFill, of: RiDrinksLine },
+  {tipe: "Minuman", on: RiDrinksFill, of: RiDrinksLine },
+]
 
 const Page = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -56,17 +55,7 @@ const Page = () => {
 
       <div 
         className="relative flex gap-4 max-w-4xl h-20 mx-auto -mt-10 z-10 bg-[#231f20] rounded-md justify-center">
-        
-        <div className="flex gap-2 text-white font-bold items-center">
-          <div className="bg-red-600 rounded-full w-6 h-6"></div>
-          <p>Makanan</p>
-        </div>
-
-        <div className="flex gap-2 text-white font-bold items-center">
-          <div className="bg-purple-600 rounded-full w-6 h-6"></div>
-          <p>Minuman</p>
-        </div>
-
+        {categori.map((el, index) => <Chip text={el.tipe} handleClick={handleClick} activeIndex={activeIndex} index={index}/>)}
       </div>
 
       <div className="w-full -z-1 mt-36 bg-[#d62828] border b-[#231f20] p-4">
