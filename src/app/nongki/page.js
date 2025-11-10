@@ -9,6 +9,7 @@ import { RiDrinksLine } from "react-icons/ri";
 import TopNavbar from "../../../component/TopNavbar";
 import Chip from "../../../component/Chip";
 import DropdownMenu from "../../../component/DropdownMenu";
+import TopBar from "./component/TopBar";
 
 const places = [
   { id: 1, name: "Sumi-sumi", desc: "Beef katsu and Pittu, Depok", image: "/assets/sumi_sumi.png" },
@@ -22,7 +23,8 @@ const places = [
 
 
 const categori = [
-  {tipe: "Makanan", on: RiDrinksFill, of: RiDrinksLine },
+  {tipe: "Tampilkan Semua", color: "Red"},
+  {tipe: "Makanan", color: "Blue" },
   {tipe: "Minuman", on: RiDrinksFill, of: RiDrinksLine },
 ]
 
@@ -35,12 +37,13 @@ const Page = () => {
 
   return (
     <main className="w-full min-h-screen bg-white">
+      <TopNavbar />
       <section className="w-full bg-[#00ADB5] flex justify-center items-center text-center">
         <div className="w-full">
-          <div className="h-80 p-4 mb-2 place-content-center">
-            <h2 className="font-racingsans text-5xl ">
+          <div className="h-130 p-4 mb-2 place-content-center">
+            <h1 className="font-racingsans md:text-7xl text-3xl ">
               SPOT NONGKRONG <br /> DI PINTU DORAEMON
-            </h2>
+            </h1>
           </div>
 
           {/* <div className="bg-amber-300 overflow-hidden whitespace-nowrap border-2">
@@ -54,11 +57,13 @@ const Page = () => {
       </section>
 
       <div 
-        className="relative flex gap-4 max-w-4xl h-20 mx-auto -mt-10 z-10 bg-[#231f20] rounded-md justify-center">
+        className="relative flex gap-4 max-w-4xl h-20 mx-2 md:mx-auto -mt-10 z-10 bg-[#231f20] rounded-md justify-center">
         {categori.map((el, index) => <Chip text={el.tipe} handleClick={handleClick} activeIndex={activeIndex} index={index}/>)}
       </div>
 
-      <div className="w-full -z-1 mt-36 bg-[#d62828] border b-[#231f20] p-4">
+      <div className="max-w-6xl m-auto -z-1 mt-8 p-4">
+        <TopBar />
+
         {/* Mobile View */}
         <section className="sm:hidden max-w-md flex justify-center my-4 mx-auto flex-col gap-6 px-3 pb-10">
           {places.map((el, i) => (
