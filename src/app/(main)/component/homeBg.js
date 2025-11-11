@@ -7,9 +7,6 @@ import { Reflector } from 'three/examples/jsm/objects/Reflector.js';
 import * as THREE from 'three';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
-import { BokehPass } from 'three/examples/jsm/postprocessing/BokehPass.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,7 +22,6 @@ export default function HomeBg(){
         let scene, camera, renderer, animationFrameId, control;
         let doorMesh = null
         let cameraStartX = 30
-        let composer, bokehPass
 
         const init = () => {
             scene = new THREE.Scene()
@@ -72,38 +68,38 @@ export default function HomeBg(){
                     });
 
                     tl.to(camera.position, {
-                        x: -10,
-                        duration: 4,
+                        x: 0,
+                        duration: 3,
                         ease: "none"
                     }, "<");
 
                     //spot
                     tl.to(camera.position, {
-                        x: -20,
-                        duration: 6,
+                        x: -15,
+                        duration: 3,
                         ease: "none"
-                    }, "<");
+                    });
 
                     //promo
                     tl.to(camera.position, {
-                        x: -30,
-                        duration: 8,
+                        x: -26,
+                        duration: 3,
                         ease: "none"
-                    }, "<");
+                    });
 
                     //search
                     tl.to(camera.position, {
                         x: -40,
-                        duration: 10,
+                        duration: 3,
                         ease: "none"
-                    }, "<");
+                    });
 
                     ScrollTrigger.create({
                         animation: tl,    
                         trigger: "body",
                         start: "top top",    
                         end: "bottom bottom",  
-                        scrub: 0              
+                        scrub: 0.25            
                     });
 
                 } else {
@@ -118,31 +114,10 @@ export default function HomeBg(){
             const ambientLight = new THREE.AmbientLight(0xFFFFFF, 1)
             scene.add(ambientLight)
 
-            const cakelight = new THREE.SpotLight(0xFFFFFF, 1000)
-            cakelight.position.set(-10, 5, 10)
-            scene.add(cakelight)
+            const spotLight = new THREE.DirectionalLight(0xffffff, 5);
 
-            const coffeelight = new THREE.SpotLight(0xFFFFFF, 1000)
-            coffeelight.position.set(-20, 5, 10)
-            scene.add(coffeelight)
-
-            const newslight = new THREE.SpotLight(0xFFFFFF, 1000)
-            newslight.position.set(-30, 5, 10)
-            scene.add(newslight)
-
-            composer = new EffectComposer( renderer )
-
-            const renderPass = new RenderPass( scene, camera );
-            composer.addPass( renderPass );
-
-            bokehPass = new BokehPass( scene, camera, {
-                focus: 0.01, 
-                aperture: 0.0001, 
-                maxblur: 0.01, 
-                width: window.innerWidth,
-                height: window.innerHeight
-            });
-            composer.addPass( bokehPass );
+            spotLight.position.set(10, 5, 0); 
+            scene.add(spotLight);
 
             const gltfLoader = new GLTFLoader(manager)
 
@@ -155,7 +130,6 @@ export default function HomeBg(){
                 cake.rotateX(-Math.PI / 1/8)
                 cake.rotateZ(Math.PI / 1/8)
                 cake.position.set(8.5, 4.7, 1.25)
-                cakelight.target = cake
                 diningSetup.add(cake)
             })
 
@@ -165,7 +139,6 @@ export default function HomeBg(){
                 coffee.rotateX(Math.PI / 1/8)
                 coffee.rotateZ(Math.PI / 1/8)
                 coffee.position.set(-8.8, 4.8, -0.4)
-                coffeelight.target = coffee
                 diningSetup.add(coffee)
             })
 
@@ -176,7 +149,6 @@ export default function HomeBg(){
                 newspaper.rotateZ(Math.PI / 2)
                 newspaper.rotateZ(-Math.PI / 8)
                 newspaper.position.set(-22, 5, 1)
-                newslight.target = newspaper
                 diningSetup.add(newspaper)
             })
 
@@ -194,16 +166,17 @@ export default function HomeBg(){
                 scene.add(pintu)
             })
 
-            const floorGeometry = new THREE.PlaneGeometry(100, 100); 
-            const groundMirror = new Reflector(floorGeometry, {
-                clipBias: 0.003,
-                textureWidth: window.innerWidth * window.devicePixelRatio,
-                textureHeight: window.innerHeight * window.devicePixelRatio,
-                color: 0x889999
-            });
-            groundMirror.rotation.x = -Math.PI / 2
-            groundMirror.position.y = 0
-            scene.add(groundMirror);
+            function addStar(){
+                const starGeometry = new THREE.SphereGeometry(0.1, 24, 24)
+                const starMaterial = new THREE.MeshBasicMaterial({ color: 0x6298E5 })
+                const star = new THREE.Mesh(starGeometry, starMaterial)
+
+                const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(50))
+                star.position.set(x, y, z)
+                scene.add(star)
+            }
+
+            Array(100).fill().forEach(addStar)
         }
 
         const handleResize = () => {
@@ -211,12 +184,10 @@ export default function HomeBg(){
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
             renderer.setSize(window.innerWidth, window.innerHeight);
-            composer.setSize(window.innerWidth, window.innerHeight);
-            bokehPass.uniforms['aspect'].value = camera.aspect;
         };
 
         const animate = () => {
-            composer.render()
+            renderer.render(scene, camera)
             //control.update() //orbit control
             animationFrameId = requestAnimationFrame(animate)
         }
