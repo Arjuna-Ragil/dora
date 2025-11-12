@@ -16,7 +16,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-02",
+      "umkm_id": "umkm-02",
       "nama_toko": "Ayam Bakar Lesehan",
       "kategori": "Makanan Utama | Ayam",
       "deskripsi_singkat": "Spesialisasi paket hemat ayam bakar, goreng, atau katsu dengan nasi, lalapan, dan sambal.",
@@ -28,7 +28,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-03",
+      "umkm_id": "umkm-03",
       "nama_toko": "Es Teh Jumbo",
       "kategori": "Minuman Segar",
       "deskripsi_singkat": "Berbagai varian es teh dengan rasa buah yang menyegarkan dan minuman berbasis susu, cocok untuk melepas dahaga.",
@@ -58,7 +58,7 @@
       "kontak": "0852-1703-5180"
     },
     {
-      "umkm_id": "UMKM-04",
+      "umkm_id": "umkm-04",
       "nama_toko": "Rumah Makan Padang Triarga",
       "kategori": "Makanan Utama | Nasi Padang",
       "deskripsi_singkat": "Menyajikan menu khas Nasi Padang lengkap, mulai dari Rendang, Ayam, Ikan, hingga sayuran pelengkap.",
@@ -92,7 +92,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-05",
+      "umkm_id": "umkm-05",
       "nama_toko": "Ayam Penyet Cabe Ijo Bang Dul",
       "kategori": "Makanan Utama | Ayam",
       "deskripsi_singkat": "Menyajikan olahan ayam dengan sambal hijau khas, termasuk Ayam Goreng Cabe Ijo dan Nasi Ayam Katsu.",
@@ -108,7 +108,7 @@
       "tambahan": ["Ada Lesehan", "Terima Pesanan"]
     },
     {
-      "umkm_id": "UMKM-06",
+      "umkm_id": "umkm-06",
       "nama_toko": "Cimol dan Ayam (Free Sambal Geprek)",
       "kategori": "Cemilan & Makanan Cepat Saji",
       "deskripsi_singkat": "Menjual Cimol dengan berbagai ukuran cup, serta Ayam Crispy dan Ayam Katsu lengkap dengan Nasi.",
@@ -126,7 +126,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-07",
+      "umkm_id": "umkm-07",
       "nama_toko": "Soto Segar",
       "kategori": "Makanan Utama | Berkuah",
       "deskripsi_singkat": "Fokus pada hidangan Soto Seger dan paket lengkap Soto Nasi Campur dengan Es Teh Jumbo.",
@@ -138,7 +138,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-08",
+      "umkm_id": "umkm-08",
       "nama_toko": "Batagor",
       "kategori": "Cemilan | Street Food",
       "deskripsi_singkat": "Pilihan makanan ringan khas seperti Batagor, Somay, Otak-otak, dan Pempek.",
@@ -153,7 +153,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-09",
+      "umkm_id": "umkm-09",
       "nama_toko": "Ketoprak Tahu",
       "kategori": "Makanan Utama | Tradisional",
       "deskripsi_singkat": "Menawarkan hidangan tradisional Indonesia seperti Ketoprak, Gado-gado, Keredok, hingga menu berat seperti Gulai Sapi.",
@@ -170,7 +170,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-10",
+      "umkm_id": "umkm-10",
       "nama_toko": "MattchaBoy",
       "kategori": "Minuman Kopi & Non-Kopi",
       "deskripsi_singkat": "Spesialisasi minuman berbasis Matcha dengan berbagai varian rasa unik dan *topping* seperti Caramel dan Strawberry Cheese.",
@@ -190,7 +190,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-11",
+      "umkm_id": "umkm-11",
       "nama_toko": "DeHaga",
       "kategori": "Minuman & Makanan Ringan Korea",
       "deskripsi_singkat": "Menawarkan aneka minuman teh, susu, dan yogurt dengan topping, serta makanan ringan khas Korea seperti Chingu dan Odeng.",
@@ -265,7 +265,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-12",
+      "umkm_id": "umkm-12",
       "nama_toko": "Lekker Lovers",
       "kategori": "Cemilan | Kue Pancong/Lekker",
       "deskripsi_singkat": "Spesialis Lekker dengan varian rasa manis dan asin premium, mulai dari Mozzarella, Nutella, hingga kombinasi Durian.",
@@ -396,7 +396,7 @@
       "kontak": null
     },
     {
-      "umkm_id": "UMKM-13",
+      "umkm_id": "umkm-13",
       "nama_toko": "Creamy Fruitzz & Juicy",
       "kategori": "Minuman Buah & Jus",
       "deskripsi_singkat": "Menyajikan jus buah murni dan kreasi 'Creamy' (jus kental) dengan berbagai pilihan buah segar seperti Alpukat, Mangga, hingga Buah Naga.",
