@@ -18,7 +18,7 @@ export default function InputLogin(){
                     <button className="flex self-start">Lupa Kata Sandi?</button>
                 </div>
                 <button className="bg-primary/70 hover:bg-primary text-white text-2xl w-full rounded-2xl p-2">Masuk Sekarang</button>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 max-md:text-sm">
                     <p>Belum punya akun?</p>
                     <p onClick={() => setShowSignUp(true)} className="border-b">Daftar di sini</p>
                 </div>
@@ -41,7 +41,7 @@ export default function InputLogin(){
                     <input type="password" placeholder="Konfirmasi Kata Sandi" className="p-2 px-4 border rounded-2xl"/>
                 </div>
                 <button className="bg-primary/70 hover:bg-primary text-white text-2xl w-full rounded-2xl p-2">Buat Akun</button>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-row gap-2 max-md:text-sm">
                     <p>Sudah punya akun?</p>
                     <p onClick={() => setShowSignUp(false)} className="border-b">Masuk di sini</p>
                 </div>
