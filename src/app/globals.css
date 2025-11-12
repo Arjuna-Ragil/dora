@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Stack+Sans+Headline:wght@200..700&display=swap");
 @import "tailwindcss";
 
 @theme{
@@ -5,6 +6,12 @@
     --color-secondary: #6298E5;
 
     --animate-appear: appear 0.1s ease-in-out forwards;
+
+    --font-racingsans: "Racing Sans One", sans-serif;
+
+    --font-stacksansheadline: "Stack Sans Headline", sans-serif;
+
+    --my-grid-cols: minmax(320px, 1fr);
 
     @keyframes appear {
     0% {
@@ -14,8 +21,36 @@
       opacity: 1;
     }
   }
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  @keyframes spin-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
 }
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 50s linear infinite;
+}
+
 
 html {
     scroll-behavior: smooth;
+}
+ 
+
+.hide-scrollbar { 
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar { 
+  display: none;
 }
