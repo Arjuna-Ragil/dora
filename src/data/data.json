@@ -3,7 +3,7 @@
     {
       "umkm_id": "umkm-01",
       "nama_toko": "Tukang Roti",
-      "kategori": "Roti & Cemilan",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Menyediakan aneka roti manis, seperti Mexican Bun dan Roti Moca, serta Cookies untuk cemilan ringan.",
       "lokasi_sederhana": "Doraemon belok kanan lurus terus aga ke ujung.",
       "menu": [
@@ -18,7 +18,7 @@
     {
       "umkm_id": "umkm-02",
       "nama_toko": "Ayam Bakar Lesehan",
-      "kategori": "Makanan Utama | Ayam",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Spesialisasi paket hemat ayam bakar, goreng, atau katsu dengan nasi, lalapan, dan sambal.",
       "lokasi_sederhana": "Doraemon belok kanan lurus terus aga ke ujung, sebelum Tukang Roti",
       "menu": [
@@ -30,7 +30,7 @@
     {
       "umkm_id": "umkm-03",
       "nama_toko": "Es Teh Jumbo",
-      "kategori": "Minuman Segar",
+      "kategori": "Minuman",
       "deskripsi_singkat": "Berbagai varian es teh dengan rasa buah yang menyegarkan dan minuman berbasis susu, cocok untuk melepas dahaga.",
       "lokasi_sederhana": "Doraemon belok kiri terus setelah Rumah Makan Padang Triarga",
       "menu": [
@@ -60,7 +60,7 @@
     {
       "umkm_id": "umkm-04",
       "nama_toko": "Rumah Makan Padang Triarga",
-      "kategori": "Makanan Utama | Nasi Padang",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Menyajikan menu khas Nasi Padang lengkap, mulai dari Rendang, Ayam, Ikan, hingga sayuran pelengkap.",
       "lokasi_sederhana": "Doraemon belok kiri terus",
       "menu": [
@@ -94,7 +94,7 @@
     {
       "umkm_id": "umkm-05",
       "nama_toko": "Ayam Penyet Cabe Ijo Bang Dul",
-      "kategori": "Makanan Utama | Ayam",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Menyajikan olahan ayam dengan sambal hijau khas, termasuk Ayam Goreng Cabe Ijo dan Nasi Ayam Katsu.",
       "lokasi_sederhana": "Doraemon belok kanan lurus terus aga ke ujung, sebelum Tukang Roti",
       "menu": [
@@ -110,7 +110,7 @@
     {
       "umkm_id": "umkm-06",
       "nama_toko": "Cimol dan Ayam (Free Sambal Geprek)",
-      "kategori": "Cemilan & Makanan Cepat Saji",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Menjual Cimol dengan berbagai ukuran cup, serta Ayam Crispy dan Ayam Katsu lengkap dengan Nasi.",
       "lokasi_sederhana": "Doraemon belok kiri terus sebelum Rumah Makan Padang Triarga",
       "menu": [
@@ -128,7 +128,7 @@
     {
       "umkm_id": "umkm-07",
       "nama_toko": "Soto Segar",
-      "kategori": "Makanan Utama | Berkuah",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Fokus pada hidangan Soto Seger dan paket lengkap Soto Nasi Campur dengan Es Teh Jumbo.",
       "lokasi_sederhana": "Doraemon belok kanan lurus terus aga ke ujung, sebelum Tukang Roti",
       "menu": [
@@ -140,7 +140,7 @@
     {
       "umkm_id": "umkm-08",
       "nama_toko": "Batagor",
-      "kategori": "Cemilan | Street Food",
+      "kategori": "Makanan Utama | Tradisional",
       "deskripsi_singkat": "Pilihan makanan ringan khas seperti Batagor, Somay, Otak-otak, dan Pempek.",
       "lokasi_sederhana": "Samping Pintu Doraemon sebelah kiri",
       "menu": [
@@ -155,7 +155,7 @@
     {
       "umkm_id": "umkm-09",
       "nama_toko": "Ketoprak Tahu",
-      "kategori": "Makanan Utama | Tradisional",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Menawarkan hidangan tradisional Indonesia seperti Ketoprak, Gado-gado, Keredok, hingga menu berat seperti Gulai Sapi.",
       "lokasi_sederhana": "Samping Pintu Doraemon sebelah kanan",
       "menu": [
@@ -172,7 +172,7 @@
     {
       "umkm_id": "umkm-10",
       "nama_toko": "MattchaBoy",
-      "kategori": "Minuman Kopi & Non-Kopi",
+      "kategori": "Minuman",
       "deskripsi_singkat": "Spesialisasi minuman berbasis Matcha dengan berbagai varian rasa unik dan *topping* seperti Caramel dan Strawberry Cheese.",
       "lokasi_sederhana": "Pintu Doraemon belok kiri depan Cimol dan Ayam (Free Sambal Geprek)",
       "menu": [
@@ -192,7 +192,7 @@
     {
       "umkm_id": "umkm-11",
       "nama_toko": "DeHaga",
-      "kategori": "Minuman & Makanan Ringan Korea",
+      "kategori": "Minuman",
       "deskripsi_singkat": "Menawarkan aneka minuman teh, susu, dan yogurt dengan topping, serta makanan ringan khas Korea seperti Chingu dan Odeng.",
       "lokasi_sederhana": "Pintu Doraemon belok kiri",
       "menu": [
@@ -267,7 +267,7 @@
     {
       "umkm_id": "umkm-12",
       "nama_toko": "Lekker Lovers",
-      "kategori": "Cemilan | Kue Pancong/Lekker",
+      "kategori": "Makanan",
       "deskripsi_singkat": "Spesialis Lekker dengan varian rasa manis dan asin premium, mulai dari Mozzarella, Nutella, hingga kombinasi Durian.",
       "lokasi_sederhana": "Pintu Doraemon belon kanan",
       "menu": [
@@ -398,7 +398,7 @@
     {
       "umkm_id": "umkm-13",
       "nama_toko": "Creamy Fruitzz & Juicy",
-      "kategori": "Minuman Buah & Jus",
+      "kategori": "Minuman",
       "deskripsi_singkat": "Menyajikan jus buah murni dan kreasi 'Creamy' (jus kental) dengan berbagai pilihan buah segar seperti Alpukat, Mangga, hingga Buah Naga.",
       "lokasi_sederhana": "Pintu Doraemon belok kanan",
       "menu": [
