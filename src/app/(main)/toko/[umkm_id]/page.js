@@ -1,8 +1,9 @@
 import Link from 'next/link';
 
 import data from '../../../../data/data.json'; 
-import TopNavbar from '../../../../../component/TopNavbar';
-import { Locate, Map, MapPin, Phone } from 'lucide-react';
+import TopNavbar from '../../../../../component/TopNavbar'; 
+import { MapPin, Phone, Heart } from 'lucide-react'; 
+import Image from 'next/image';
 
 const getUmkmData = (id) => { 
   return data.umkm_data.find((toko) => toko.umkm_id === id);
@@ -42,47 +43,67 @@ export default async function UmkmDetailPage({ params }) {
   };
 
   return ( 
-    <div className="min-h-screen bg-white flex flex-col font-inter">
+    <div className="min-h-screen bg-white flex flex-col">
         
       <TopNavbar />
 
       <div className="w-full max-w-7xl mx-auto p-6 md:p-8" style={{height: 'calc(100vh - 80px)'}}>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-full">
-           
-          <div className="md:col-span-4 space-y-4 flex flex-col h-full">
-            <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 relative flex-grow">
-              <Link href="/" className="absolute top-4 left-4 z-10 p-2 bg-white rounded-full shadow-md transition hover:bg-gray-50">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                </svg>
-              </Link>
-                
-              <div className="absolute inset-0 bg-map-pattern opacity-40"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl">📍</div>
-              </div>
+            
+          <div className="md:col-span-4 space-y-4 flex flex-col h-full"> 
+          <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 relative flex-grow min-h-[250px] md:min-h-0">
+             
+            <Link href="/" className="absolute top-4 left-4 z-10 p-2 bg-white rounded-full shadow-md transition hover:bg-gray-50">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+            </Link>
+               
+            <div className="absolute inset-0">
+              {toko.image ? (
+                <Image 
+                  src={toko.image} 
+                  alt={`Foto Utama ${toko.nama_toko}`}
+                  fill 
+                  style={{ objectFit: 'cover' }}
+                  className="transition duration-500 ease-in-out hover:scale-105"
+                  priority={true} 
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
+                  <MapPin className="h-12 w-12 text-gray-400" />
+                </div>
+              )}
             </div>
-
-            <a 
-              href={`tel:${toko.kontak || ''}`}
-              className="block w-full p-4 bg-blue-600 text-white text-center font-semibold text-base rounded-2xl hover:bg-blue-700 transition duration-150 shadow-sm flex-shrink-0"
-            >
-              Hubungi Usaha
-            </a>
-          </div>
  
+            {toko.kontak && (
+              <a 
+                href={`tel:${toko.kontak}`} 
+                className="absolute bottom-0 inset-x-0 z-20 
+                          block w-full p-4 bg-blue-600 text-white text-center 
+                          font-semibold text-base hover:bg-blue-700 
+                          transition duration-150 shadow-lg p-1" 
+                style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
+              >
+                Hubungi Usaha
+              </a>
+            )}
+
+          </div>
+           
+        </div>
+  
           <div className="md:col-span-8 h-full overflow-y-scroll hide-scrollbar pr-2">
             <div className="space-y-5">
-             
+              
             <div className="flex justify-between items-start">
               <span className="text-xs font-semibold px-3 py-1.5 bg-blue-50 text-blue-600 rounded-full">
                 {toko.kategori}
-              </span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600 cursor-pointer transition duration-150 hover:scale-110" viewBox="0 0 20 20" fill="currentColor">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.817 2.053a1 1 0 00-.363 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.817-2.053a1 1 0 00-1.175 0l-2.817 2.053c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
+              </span> 
+              <Heart className="h-6 w-6 text-pink-500 cursor-pointer transition duration-150 hover:scale-110" fill="currentColor" />
             </div>
- 
+  
             <div>
               <h1 className="text-4xl font-semibold text-[#034ED2] mb-3">{toko.nama_toko}</h1>
               <p className="text-gray-600 text-sm leading-relaxed mb-3">
@@ -90,19 +111,18 @@ export default async function UmkmDetailPage({ params }) {
               </p>
               <div className="text-sm text-gray-500 space-y-1">
                 <p className="flex items-start">
-                  <span className="text-sm text-[#034ED2] mr-1 h-3"><MapPin /></span>
+                  <MapPin className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" />
                   <span>{toko.lokasi_sederhana}</span>
                 </p>
                 {toko.kontak && (
                   <p className="flex items-start">
-                    <span className="text-sm text-[#034ED2] mr-1"><Phone /></span>
+                    <Phone className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" />
                     <span>Buka setiap hari, {toko.kontak}</span>
                   </p>
                 )}
               </div>
             </div>
- 
-            {/* JUJUR gua bingung awokaowkaokwaokowkoakwokawokaowkaowkoakwoakwa gmn yh bos
+  
             {toko.nama_toko === 'Tukang Roti' && (
               <div className="bg-white border-2 border-blue-500 rounded-2xl p-4 shadow-sm">
                 <h3 className="text-blue-600 font-bold text-base mb-2">Promo of the day</h3>
@@ -115,14 +135,14 @@ export default async function UmkmDetailPage({ params }) {
                   <p className="text-xs text-blue-600">+ Bebas kirim dari PHO Doraemon</p>
                 </div>
               </div>
-            )}  */}
- 
+            )}
+  
             <div>
-              <h2 className="text-xl font-semibold text-[#034ED2]0 mb-4">Menu:</h2>
-              <div className="space-y-3">
+              <h2 className="text-xl font-semibold text-[#034ED2] mb-4">Menu:</h2> 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                 {toko.menu.map((item, index) => (
                   <div key={index} className="text-sm">
-                    <div className="flex items-start gap-2">
+                    <div className="flex items-start gap-2"> 
                       <span className="text-gray-600 font-base flex-shrink-0">{index + 1}.</span>
                       <div className="flex-grow">
                         <p className="text-gray-600 font-base">
