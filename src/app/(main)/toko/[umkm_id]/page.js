@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+ 
 import data from '../../../../data/data.json'; 
 import TopNavbar from '../../../../../component/TopNavbar'; 
 import { MapPin, Phone, Heart } from 'lucide-react'; 
@@ -34,12 +34,17 @@ export default async function UmkmDetailPage({ params }) {
       </div>
     );
   }
-    
-  const formatPrice = (price) => {
-      if (price.includes('K')) {
-          return `Rp${price.replace('K', '.000')}`;
+     
+  const formatPrice = (price) => { 
+    if (typeof price === 'number') { 
+      if (price % 1 === 0) {
+        return `Rp${price}.000`;  
+      } else { 
+        const [int, dec] = String(price).split('.');
+        return `Rp${int}.${dec}00`; 
       }
-      return price;   
+    } 
+    return price; 
   };
 
   return ( 
@@ -52,13 +57,13 @@ export default async function UmkmDetailPage({ params }) {
             
           <div className="md:col-span-4 space-y-4 flex flex-col h-full"> 
           <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 relative flex-grow min-h-[250px] md:min-h-0">
-             
+              
             <Link href="/" className="absolute top-4 left-4 z-10 p-2 bg-white rounded-full shadow-md transition hover:bg-gray-50">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
             </Link>
-               
+            
             <div className="absolute inset-0">
               {toko.image ? (
                 <Image 
@@ -76,14 +81,14 @@ export default async function UmkmDetailPage({ params }) {
                 </div>
               )}
             </div>
- 
+  
             {toko.kontak && (
               <a 
                 href={`tel:${toko.kontak}`} 
                 className="absolute bottom-0 inset-x-0 z-20 
-                          block w-full p-4 bg-blue-600 text-white text-center 
-                          font-semibold text-base hover:bg-blue-700 
-                          transition duration-150 shadow-lg p-1" 
+                      block w-full p-4 bg-blue-600 text-white text-center 
+                      font-semibold text-base hover:bg-blue-700 
+                      transition duration-150 shadow-lg p-1" 
                 style={{ borderBottomLeftRadius: '1rem', borderBottomRightRadius: '1rem' }}
               >
                 Hubungi Usaha
@@ -91,7 +96,7 @@ export default async function UmkmDetailPage({ params }) {
             )}
 
           </div>
-           
+            
         </div>
   
           <div className="md:col-span-8 h-full overflow-y-scroll hide-scrollbar pr-2">
@@ -111,8 +116,8 @@ export default async function UmkmDetailPage({ params }) {
               </p>
               <div className="text-sm text-gray-500 space-y-1">
                 <p className="flex items-start">
-                  <MapPin className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" />
-                  <span>{toko.lokasi_sederhana}</span>
+                  <MapPin className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" /> 
+                  <span>{toko.lokasi_sederhana}</span> 
                 </p>
                 {toko.kontak && (
                   <p className="flex items-start">
@@ -147,7 +152,7 @@ export default async function UmkmDetailPage({ params }) {
                       <div className="flex-grow">
                         <p className="text-gray-600 font-base">
                           <span>{item.nama}</span>
-                          {item.harga && <span className="text-blue-600 font-semibold"> - {formatPrice(item.harga)}</span>}
+                          {item.harga && <span className="text-blue-600 font-semibold"> - {formatPrice(item.harga)}</span>}  
                           {item.harga_m && item.harga_xl && (
                             <span className="text-blue-600 font-semibold"> - M: {formatPrice(item.harga_m)} / XL: {formatPrice(item.harga_xl)}</span>
                           )}

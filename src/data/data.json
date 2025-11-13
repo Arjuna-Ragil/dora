@@ -5,7 +5,7 @@
       "nama_toko": "Tukang Roti",
       "kategori": "Makanan",
       "deskripsi_singkat": "Menyediakan aneka roti manis, seperti Mexican Bun dan Roti Moca, serta Cookies untuk cemilan ringan.",
-      "lokasi_formal": "Area ujung (setelah Ayam Bakar Lesehan) di jalur kanan dari Pintu Doraemon.",
+      "lokasi_sederhana": "Area ujung (setelah Ayam Bakar Lesehan) di jalur kanan dari Pintu Doraemon.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Ftukang%20roti.jpg?alt=media&token=74c104af-f8bf-463f-a486-8838491faa23",
       "menu": [
         {"nama": "Cookies", "harga": 7},
@@ -21,7 +21,7 @@
       "nama_toko": "Ayam Bakar Lesehan",
       "kategori": "Makanan",
       "deskripsi_singkat": "Spesialisasi paket hemat ayam bakar, goreng, atau katsu dengan nasi, lalapan, dan sambal.",
-      "lokasi_formal": "Di jalur kanan dari Pintu Doraemon, sebelum Tukang Roti.",
+      "lokasi_sederhana": "Di jalur kanan dari Pintu Doraemon, sebelum Tukang Roti.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fayam%20bakar%20stand.jpg?alt=media&token=0962fe4a-9744-4cfb-96e8-369144a7db51",
       "menu": [
         {"nama": "Paket Hemat A", "harga": 12, "deskripsi": "Ayam bakar/goreng/katsu + nasi + lalapan + sambal"},
@@ -34,7 +34,7 @@
       "nama_toko": "Es Teh Jumbo",
       "kategori": "Minuman",
       "deskripsi_singkat": "Berbagai varian es teh dengan rasa buah yang menyegarkan dan minuman berbasis susu, cocok untuk melepas dahaga.",
-      "lokasi_formal": "Di jalur kiri dari Pintu Doraemon, setelah Rumah Makan Padang Triarga.",
+      "lokasi_sederhana": "Di jalur kiri dari Pintu Doraemon, setelah Rumah Makan Padang Triarga.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fes%20teh.jpg?alt=media&token=1962c43e-f60d-44b1-86bb-fff4d975b033",
       "menu": [
         {"nama": "Teh Leci", "harga": 6},
@@ -65,7 +65,7 @@
       "nama_toko": "Rumah Makan Padang Triarga",
       "kategori": "Makanan",
       "deskripsi_singkat": "Menyajikan menu khas Nasi Padang lengkap, mulai dari Rendang, Ayam, Ikan, hingga sayuran pelengkap.",
-      "lokasi_formal": "Di jalur kiri dari Pintu Doraemon.",
+      "lokasi_sederhana": "Di jalur kiri dari Pintu Doraemon.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fnaspad.jpg?alt=media&token=8f5c06c0-15f3-4283-82ed-1cecfd40aeeb",
       "menu": [
         {"nama": "Nasi Rendang", "harga": 16},
@@ -100,7 +100,7 @@
       "nama_toko": "Ayam Penyet Cabe Ijo Bang Dul",
       "kategori": "Makanan",
       "deskripsi_singkat": "Menyajikan olahan ayam dengan sambal hijau khas, termasuk Ayam Goreng Cabe Ijo dan Nasi Ayam Katsu.",
-      "lokasi_formal": "Di jalur kanan dari Pintu Doraemon, sebelum Tukang Roti (bersebelahan dengan Ayam Bakar Lesehan).",
+      "lokasi_sederhana": "Di jalur kanan dari Pintu Doraemon, sebelum Tukang Roti (bersebelahan dengan Ayam Bakar Lesehan).",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fayam%20penyet%20cabe%20ijo.jpg?alt=media&token=a1360ffb-4b39-41c2-827e-4697494a82d1",
       "menu": [
         {"nama": "Ayam Goreng Cabe Ijo", "harga": 12},
@@ -117,7 +117,7 @@
       "nama_toko": "Cimol dan Ayam (Free Sambal Geprek)",
       "kategori": "Makanan",
       "deskripsi_singkat": "Menjual Cimol dengan berbagai ukuran cup, serta Ayam Crispy dan Ayam Katsu lengkap dengan Nasi.",
-      "lokasi_formal": "Di jalur kiri dari Pintu Doraemon, sebelum Rumah Makan Padang Triarga.",
+      "lokasi_sederhana": "Di jalur kiri dari Pintu Doraemon, sebelum Rumah Makan Padang Triarga.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fgeprek%20n%20cimon%20stand.jpg?alt=media&token=b0d8da67-7d30-494c-80df-62d1c3e07218",
       "menu": [
         {"nama": "Cimol Cup Kecil", "harga": 5},
@@ -136,7 +136,7 @@
       "nama_toko": "Soto Segar",
       "kategori": "Makanan",
       "deskripsi_singkat": "Fokus pada hidangan Soto Seger dan paket lengkap Soto Nasi Campur dengan Es Teh Jumbo.",
-      "lokasi_formal": "Di jalur kanan dari Pintu Doraemon, sebelum Tukang Roti (bersebelahan dengan Ayam Bakar Lesehan).",
+      "lokasi_sederhana": "Di jalur kanan dari Pintu Doraemon, sebelum Tukang Roti (bersebelahan dengan Ayam Bakar Lesehan).",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fsoto.jpg?alt=media&token=4af2f76f-4e71-4314-b27a-bf5e6dd410f4",
       "menu": [
         {"nama": "Soto Seger", "harga": 10},
@@ -149,7 +149,7 @@
       "nama_toko": "Batagor",
       "kategori": "Makanan Utama | Tradisional",
       "deskripsi_singkat": "Pilihan makanan ringan khas seperti Batagor, Somay, Otak-otak, dan Pempek.",
-      "lokasi_formal": "Tepat di samping Pintu Doraemon (sebelah kiri).",
+      "lokasi_sederhana": "Tepat di samping Pintu Doraemon (sebelah kiri).",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fbatagor.jpg?alt=media&token=6d41029b-fc65-4188-816c-8dbe970ccb5b",
       "menu": [
         {"nama": "Somay", "harga": "Tersedia"},
@@ -165,7 +165,7 @@
       "nama_toko": "Ketoprak Tahu",
       "kategori": "Makanan",
       "deskripsi_singkat": "Menawarkan hidangan tradisional Indonesia seperti Ketoprak, Gado-gado, Keredok, hingga menu berat seperti Gulai Sapi.",
-      "lokasi_formal": "Tepat di samping Pintu Doraemon (sebelah kanan).",
+      "lokasi_sederhana": "Tepat di samping Pintu Doraemon (sebelah kanan).",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fketoprak.jpg?alt=media&token=41820517-d966-4a7d-a940-296dc1a67675",
       "menu": [
         {"nama": "Gado gado", "harga": 10},
@@ -183,7 +183,7 @@
       "nama_toko": "MattchaBoy",
       "kategori": "Minuman",
       "deskripsi_singkat": "Spesialisasi minuman berbasis Matcha dengan berbagai varian rasa unik dan *topping* seperti Caramel dan Strawberry Cheese.",
-      "lokasi_formal": "Di jalur kiri dari Pintu Doraemon, di seberang stan Cimol dan Ayam.",
+      "lokasi_sederhana": "Di jalur kiri dari Pintu Doraemon, di seberang stan Cimol dan Ayam.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fmattcha.jpg?alt=media&token=cb29c456-7fdb-44af-8d4e-cfb058314f10",
       "menu": [
         {"nama": "Matcha OG", "harga": 15},
@@ -204,7 +204,7 @@
       "nama_toko": "DeHaga",
       "kategori": "Minuman",
       "deskripsi_singkat": "Menawarkan aneka minuman teh, susu, dan yogurt dengan topping, serta makanan ringan khas Korea seperti Chingu dan Odeng.",
-      "lokasi_formal": "Di jalur kiri dari Pintu Doraemon, di dekat pintu masuk.",
+      "lokasi_sederhana": "Di jalur kiri dari Pintu Doraemon, di dekat pintu masuk.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2FdeHaga.jpg?alt=media&token=3a652501-119a-4103-a5ef-18374b239f77",
       "menu": [
         {"nama": "Happy Chingu SET", "harga": 13.5, "deskripsi": "Lychee Tea + Original Chingu"},
@@ -280,7 +280,7 @@
       "nama_toko": "Lekker Lovers",
       "kategori": "Makanan",
       "deskripsi_singkat": "Spesialis Lekker dengan varian rasa manis dan asin premium, mulai dari Mozzarella, Nutella, hingga kombinasi Durian.",
-      "lokasi_formal": "Di jalur kanan dari Pintu Doraemon, di dekat pintu masuk.",
+      "lokasi_sederhana": "Di jalur kanan dari Pintu Doraemon, di dekat pintu masuk.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2FLekker%20stand.jpg?alt=media&token=4e7444c0-ee3f-44ad-8d79-91991e0a8ab1",
       "menu": [
         {"nama": "Mozzarella Beef", "harga": 10},
@@ -412,7 +412,7 @@
       "nama_toko": "Creamy Fruitzz & Juicy",
       "kategori": "Minuman",
       "deskripsi_singkat": "Menyajikan jus buah murni dan kreasi 'Creamy' (jus kental) dengan berbagai pilihan buah segar seperti Alpukat, Mangga, hingga Buah Naga.",
-      "lokasi_formal": "Di jalur kanan dari Pintu Doraemon, di dekat pintu masuk.",
+      "lokasi_sederhana": "Di jalur kanan dari Pintu Doraemon, di dekat pintu masuk.",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fjus%20stand.jpg?alt=media&token=81bc47fd-9322-4376-8947-b2b8558028b2",
       "menu": [
         {"nama": "Creamy Nanas", "harga": 15},
