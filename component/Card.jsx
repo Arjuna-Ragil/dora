@@ -19,9 +19,8 @@ function Card({nama, lokasi, deskripsi}) {
         relative z-4 w-full bg-amber-50 mx-2 my-2 p-4 rounded-xl 
         flex justify-between
         ">
-        <div>
+        <div className="max-w-46">
           <h3 className="font-semibold">{nama}</h3>
-          <p className="text-xs mb-3">{deskripsi}</p>
         </div>
         <RotatingBadge />
       </div>
