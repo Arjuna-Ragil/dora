@@ -2,8 +2,9 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import { ArrowDown, ArrowUp, ChevronDown, SearchIcon, X } from 'lucide-react';  
-import UmkmCard from "../../../../component/UmkmCard";
+import UmkmCListItem from "../../../../component/UmkmListItem";
 import rawData from '../../../data/data.json'; 
+import UmkmListItem from '../../../../component/UmkmListItem';
 
 const PRIMARY_COLOR = '#034ED2';
 
@@ -183,9 +184,9 @@ export default function Search() {
                 </div>
 
                 {filteredAndSortedData.length > 0 ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6"> 
                         {filteredAndSortedData.map((toko) => (
-                            <UmkmCard key={toko.umkm_id} toko={toko} formatPrice={formatPrice} />
+                            <UmkmListItem key={toko.umkm_id} toko={toko} />
                         ))}
                     </div>
                 ) : (

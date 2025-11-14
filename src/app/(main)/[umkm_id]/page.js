@@ -1,7 +1,7 @@
 import Link from 'next/link';
  
-import data from '../../../../data/data.json'; 
-import TopNavbar from '../../../../../component/TopNavbar'; 
+import data from '../../../data/data.json'; 
+import TopNavbar from '../../../../component/TopNavbar'; 
 import { MapPin, Phone, Heart } from 'lucide-react'; 
 import Image from 'next/image';
 
@@ -52,7 +52,7 @@ export default async function UmkmDetailPage({ params }) {
         
       <TopNavbar />
 
-      <div className="w-full max-w-7xl mx-auto p-6 md:p-8" style={{height: 'calc(100vh - 80px)'}}>
+      <div className="w-full max-w-7xl mx-auto p-6 md:p-8" style={{height: 'calc(100vh - 50px)'}}>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-full">
             
           <div className="md:col-span-4 space-y-4 flex flex-col h-full"> 
@@ -64,7 +64,7 @@ export default async function UmkmDetailPage({ params }) {
               </svg>
             </Link>
             
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 border-[#034ED2] border">
               {toko.image ? (
                 <Image 
                   src={toko.image} 
@@ -101,71 +101,74 @@ export default async function UmkmDetailPage({ params }) {
   
           <div className="md:col-span-8 h-full overflow-y-scroll hide-scrollbar pr-2">
             <div className="space-y-5">
+
+              <div className="p-6 border border-[#034ED2] rounded-xl">
               
-            <div className="flex justify-between items-start">
-              <span className="text-xs font-semibold px-3 py-1.5 bg-blue-50 text-blue-600 rounded-full">
-                {toko.kategori}
-              </span> 
-              <Heart className="h-6 w-6 text-pink-500 cursor-pointer transition duration-150 hover:scale-110" fill="currentColor" />
-            </div>
-  
-            <div>
-              <h1 className="text-4xl font-semibold text-[#034ED2] mb-3">{toko.nama_toko}</h1>
-              <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                {toko.deskripsi_singkat}
-              </p>
-              <div className="text-sm text-gray-500 space-y-1">
-                <p className="flex items-start">
-                  <MapPin className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" /> 
-                  <span>{toko.lokasi_sederhana}</span> 
-                </p>
-                {toko.kontak && (
-                  <p className="flex items-start">
-                    <Phone className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" />
-                    <span>Buka setiap hari, {toko.kontak}</span>
-                  </p>
-                )}
+              <div className="flex justify-between items-start">
+                <span className="text-xs font-semibold px-3 py-1.5 bg-blue-50 text-blue-600 rounded-full">
+                  {toko.kategori}
+                </span> 
+                <Heart className="h-6 w-6 text-pink-500 cursor-pointer transition duration-150 hover:scale-110" fill="currentColor" />
               </div>
-            </div>
-  
-            {toko.nama_toko === 'Tukang Roti' && (
-              <div className="bg-white border-2 border-blue-500 rounded-2xl p-4 shadow-sm">
-                <h3 className="text-blue-600 font-bold text-base mb-2">Promo of the day</h3>
-                <div className="bg-blue-50 rounded-xl p-3">
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-semibold text-gray-900">Sumi-sumi | <span className="text-blue-600">Diskon 40%</span></span>
-                    <span className="text-xs text-gray-500">Sampai 31 Oct</span>
-                  </div>
-                  <p className="text-xs text-gray-600">Makanan berbasis Cepat saji</p>
-                  <p className="text-xs text-blue-600">+ Bebas kirim dari PHO Doraemon</p>
+    
+              <div>
+                <h1 className="text-4xl font-semibold text-[#034ED2] mb-3">{toko.nama_toko}</h1>
+                <p className="text-gray-600 text-sm leading-relaxed mb-3">
+                  {toko.deskripsi_singkat}
+                </p>
+                <div className="text-sm text-gray-500 space-y-1">
+                  <p className="flex items-start">
+                    <MapPin className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" /> 
+                    <span>{toko.lokasi_sederhana}</span> 
+                  </p>
+                  {toko.kontak && (
+                    <p className="flex items-start">
+                      <Phone className="h-4 w-4 text-[#034ED2] mr-1 flex-shrink-0 mt-0.5" />
+                      <span>Buka setiap hari, {toko.kontak}</span>
+                    </p>
+                  )}
                 </div>
               </div>
-            )}
-  
-            <div>
-              <h2 className="text-xl font-semibold text-[#034ED2] mb-4">Menu:</h2> 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
-                {toko.menu.map((item, index) => (
-                  <div key={index} className="text-sm">
-                    <div className="flex items-start gap-2"> 
-                      <span className="text-gray-600 font-base flex-shrink-0">{index + 1}.</span>
-                      <div className="flex-grow">
-                        <p className="text-gray-600 font-base">
-                          <span>{item.nama}</span>
-                          {item.harga && <span className="text-blue-600 font-semibold"> - {formatPrice(item.harga)}</span>}  
-                          {item.harga_m && item.harga_xl && (
-                            <span className="text-blue-600 font-semibold"> - M: {formatPrice(item.harga_m)} / XL: {formatPrice(item.harga_xl)}</span>
+    
+              {toko.nama_toko === 'Tukang Roti' && (
+                <div className="bg-white border-2 border-blue-500 rounded-2xl p-4 shadow-sm">
+                  <h3 className="text-blue-600 font-bold text-base mb-2">Promo of the day</h3>
+                  <div className="bg-blue-50 rounded-xl p-3">
+                    <div className="flex justify-between items-center mb-1">
+                      <span className="font-semibold text-gray-900">Sumi-sumi | <span className="text-blue-600">Diskon 40%</span></span>
+                      <span className="text-xs text-gray-500">Sampai 31 Oct</span>
+                    </div>
+                    <p className="text-xs text-gray-600">Makanan berbasis Cepat saji</p>
+                    <p className="text-xs text-blue-600">+ Bebas kirim dari PHO Doraemon</p>
+                  </div>
+                </div>
+              )}
+              </div>
+    
+              <div className='p-6 border border-[#034ED2] rounded-xl'>
+                <h2 className="text-xl font-semibold text-[#034ED2] mb-4">Menu:</h2> 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                  {toko.menu.map((item, index) => (
+                    <div key={index} className="text-sm">
+                      <div className="flex items-start gap-2"> 
+                        <span className="text-gray-600 font-base flex-shrink-0">{index + 1}.</span>
+                        <div className="flex-grow">
+                          <p className="text-gray-600 font-base">
+                            <span>{item.nama}</span>
+                            {item.harga && <span className="text-blue-600 font-semibold"> - {formatPrice(item.harga)}</span>}  
+                            {item.harga_m && item.harga_xl && (
+                              <span className="text-blue-600 font-semibold"> - M: {formatPrice(item.harga_m)} / XL: {formatPrice(item.harga_xl)}</span>
+                            )}
+                          </p>
+                          {item.deskripsi && (
+                            <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">{item.deskripsi}</p>
                           )}
-                        </p>
-                        {item.deskripsi && (
-                          <p className="text-gray-500 text-xs mt-0.5 leading-relaxed">{item.deskripsi}</p>
-                        )}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
 
             </div>
 
