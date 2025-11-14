@@ -45,7 +45,7 @@ const Page = () => {
       <section className="w-full bg-[#00ADB5] flex justify-center items-center text-center">
         <div className="w-full">
           <div className="h-130 p-4 mb-2 place-content-center">
-            <h1 className="font-racingsans md:text-7xl text-3xl">
+            <h1 className="font-jakartasans font-bold md:text-7xl text-3xl">
               SPOT NONGKRONG <br /> DI PINTU DORAEMON
             </h1>
           </div>
