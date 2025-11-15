@@ -1,9 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from "react"
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-import { Reflector } from 'three/examples/jsm/objects/Reflector.js';
 import * as THREE from 'three';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -75,14 +73,14 @@ export default function HomeBg(){
 
                     //spot
                     tl.to(camera.position, {
-                        x: -19,
+                        x: -18,
                         duration: 3,
                         ease: "none"
                     });
 
                     //promo
                     tl.to(camera.position, {
-                        x: -30,
+                        x: -31,
                         duration: 3,
                         ease: "none"
                     });
@@ -108,8 +106,6 @@ export default function HomeBg(){
             };
 
             scene.background = new THREE.Color(0xFFFFFF);
-
-            //control = new OrbitControls(camera, renderer.domElement); //orbit control
 
             const ambientLight = new THREE.AmbientLight(0xFFFFFF, 1)
             scene.add(ambientLight)
