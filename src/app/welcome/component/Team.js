@@ -33,12 +33,12 @@ export default function Team(){
 
   return (
     <>
-      <div className='min-h-screen h-full w-full flex flex-col items-center justify-center p-15' id="team">
+      <div className='min-h-screen h-full w-full flex flex-col items-center justify-center pt-15 md:px-8 px-3' id="team">
         <div
           className="h-full w-full flex flex-col items-center justify-center gap-10">
-          <div className="flex flex-col sm:items-center items-start justify-center gap-5 animate-slideDown [animation-timeline:view()]">
-            <h2 className="md:text-5xl sm:text-4xl text-3xl font-semibold sm:text-center"> Dibangun Bareng, Buat Lokal </h2>
-            <p className="md:text-2xl sm:text-sm text-xs font-medium sm:text-center md:px-5 lg:px-40">
+          <div className="flex flex-col sm:items-center justify-center gap-5 animate-slideDown [animation-timeline:view()]">
+            <h2 className="md:text-5xl text-3xl font-semibold text-center text-primary"> Dibangun <span className="text-secondary">Bareng</span>, Buat <span className="text-secondary">Lokal</span> </h2>
+            <p className="md:text-2xl sm:text-center px-8 lg:px-40 text-justify">
               Kami adalah tim yang percaya kalau dukung UMKM itu bukan cuma soal belanja, tapi soal tumbuh bareng. 
               Yuk kenalan sama orang-orang di balik web ini!
             </p>
