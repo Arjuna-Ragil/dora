@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo, useCallback } from "react";
-import Link from "next/link";
 
 import rawData from "../../data/data.json";
 import Card from "./component/Card";
@@ -185,13 +184,7 @@ const Page = () => {
                 {filteredAndSortedData.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     {filteredAndSortedData.map((toko) => (
-                    <Link
-                        key={toko.umkm_id}
-                        href={`/${toko.umkm_id}`}
-                        className="block"
-                    >
-                        <Card data={toko} />
-                    </Link>
+                      <Card key={toko.umkm_id} data={toko} />
                     ))}
                 </div>
                 ) : (
