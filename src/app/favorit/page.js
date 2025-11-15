@@ -1,6 +1,6 @@
 // src/app/favorites/page.js
 import Image from "next/image";
-import { MdFavorite } from "react-icons/md";
+import { IoHeartSharp } from "react-icons/io5";
 import TopNavbar from "../../../component/TopNavbar";
 import data from "../../data/data.json";
 import HeroSection from "./component/HeroSection";
@@ -32,9 +32,10 @@ export default function FavoritesPage() {
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <MdFavorite
-                className="absolute top-3 right-3 bg-pink-600 text-white p-1 rounded-full shadow cursor-pointer hover:bg-pink-700 transition"
-                size={26}
+              <IoHeartSharp
+                className="absolute top-3 right-3 p-1 rounded-full shadow cursor-pointer"
+                color="#ff008a "
+                size={36}
               />
             </div>
 
