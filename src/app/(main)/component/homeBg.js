@@ -68,21 +68,21 @@ export default function HomeBg(){
                     });
 
                     tl.to(camera.position, {
-                        x: 0,
+                        x: -3,
                         duration: 3,
                         ease: "none"
                     }, "<");
 
                     //spot
                     tl.to(camera.position, {
-                        x: -15,
+                        x: -19,
                         duration: 3,
                         ease: "none"
                     });
 
                     //promo
                     tl.to(camera.position, {
-                        x: -26,
+                        x: -30,
                         duration: 3,
                         ease: "none"
                     });
