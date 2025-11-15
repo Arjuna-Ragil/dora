@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-import UserProfilePage from "../user_profile/UserProfile";
-
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <UserProfilePage />
-=======
 import Favorit from "./component/favorit";
 import Hero from "./component/hero";
 import HomeBg from "./component/homeBg";
@@ -26,7 +18,6 @@ export default function Home() {
         <Promo/>
         <Search/>
       </div>
->>>>>>> fet_promo
     </div>
   );
 }
