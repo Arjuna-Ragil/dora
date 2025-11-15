@@ -7,7 +7,7 @@ export default function LoginBtn({text, type}){
 
     if (type === "navbar") {
         return(
-            <button onClick={() => router.push("/login")} className="bg-primary/50 hover:bg-primary duration-150 rounded-full p-1 text-white px-3">{text}</button>
+            <button onClick={() => router.push("/login")} className="bg-primary/50 hover:bg-primary duration-150 rounded-full p-1 text-white md:px-3 px-2 max-md:text-xs">{text}</button>
         )
     }
     
