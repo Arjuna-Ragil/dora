@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https', 
+        hostname: 'firebasestorage.googleapis.com',  
+        pathname: '/v0/b/**', 
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.pixabay.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

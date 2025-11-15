@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Stack+Sans+Headline:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Stack+Sans+Headline:wght@200..700&display=swap");
 @import "tailwindcss";
 
 @theme{
     --color-primary: #034ED2;
     --color-secondary: #6298E5;
+    --color-kuning: #FFDB60;
 
     --animate-appear: appear 0.1s ease-in-out forwards;
 
-    --font-racingsans: "Racing Sans One", sans-serif;
+    --font-jakartasans: "Plus Jakarta Sans", sans-serif;
 
     --font-stacksansheadline: "Stack Sans Headline", sans-serif;
 
