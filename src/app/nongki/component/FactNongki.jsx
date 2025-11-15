@@ -3,26 +3,26 @@ import { motion } from "framer-motion";
 export default function FactNongki() {
   const items = [
     {
-      title: "Sign Up today",
-      line2: "and get",
-      highlight: "500 POINTS",
+      title: "LEBIH DARI",
+      line2: "14",
+      highlight: "UMKM",
     },
     {
-      title: "Earn 10 points",
-      line2: "for every $1",
-      highlight: "you spend!",
+      title: "TERDAPAT",
+      line2: "9 TEMPAT",
+      highlight: "UMKM MAKANAN",
     },
     {
-      title: "Order through",
-      line2: "the app and",
-      highlight: "earn 2X points",
+      title: "TERDAPAT",
+      line2: "3 TEMPAT",
+      highlight: "UMKM MINUMAN",
     },
   ];
 
   return (
     <div className="w-full flex flex-col justify-center bg-blue-100 items-center gap-10 py-10">
-      <h1 className="text-4xl font-bold text-green-700 text-center">
-        EARNS REWARDS WITH EVERY PURCHASE
+      <h1 className="text-4xl font-bold text-[#034ED2] text-center">
+        FAKTA TENTANG PINTU DORAEMON UIN
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
