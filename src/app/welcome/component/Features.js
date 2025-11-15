@@ -23,7 +23,7 @@ export default function Features(){
   return (
     <div className='bg-white lg:h-screen h-full w-full flex flex-col items-center justify-center xl:p-40 sm:p-20 py-5 px-8 pt-15 2xl:px-45  gap-8' id='features'>
         <div className='flex flex-col md:items-center justify-center gap-2'>
-            <h2 className='sm:text-5xl text-3xl font-semibold text-center text-primary'>Fitur yang Bikin Jelajah UMKM Makin Gampang</h2>
+            <h2 className='md:text-5xl text-3xl font-semibold text-center text-primary'>Fitur yang Bikin Jelajah UMKM Makin Gampang</h2>
             <p className='md:text-xl text-sm text-justify md:text-center'>
                 Gak perlu ribet cari tempat makan, nongkrong, atau promo menarik. Semua udah kami kumpulin biar kamu bisa dukung pelaku lokal dengan cara paling simpel.
             </p>

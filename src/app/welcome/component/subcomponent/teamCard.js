@@ -8,7 +8,7 @@ export default function TeamCard({ nama, shadow, role, desc, git, linked}){
     const [flip, setFlip] = useState(false)
 
     return(
-        <div onMouseEnter={() => setFlip(true)} onMouseLeave={() => setFlip(false)} className="h-full w-full">
+        <div onMouseEnter={() => setFlip(true)} onMouseLeave={() => setFlip(false)} className="md:h-125 w-full h-100">
             <div className={`${flip ? "rotate-y-180" : ""} duration-300 h-full w-full bg-gray-300 rounded-2xl p-3`}>
                 <div className={`${flip ? "hidden" : ""} h-full rounded-2xl relative z-10`}>
                     <Image src={shadow} alt="shadow" fill className="h-full w-full object-cover rounded-2xl absolute -z-10"/>

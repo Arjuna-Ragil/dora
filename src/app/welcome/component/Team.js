@@ -43,7 +43,7 @@ export default function Team(){
               Yuk kenalan sama orang-orang di balik web ini!
             </p>
           </div>
-          <div className="md:h-125 w-full h-100 grid md:grid-cols-3 gap-10 p-5">
+          <div className="w-full grid md:grid-cols-3 gap-10 p-5">
             {team.map((person) => (
               <TeamCard key={person.name} nama={person.name} shadow={person.shadow} role={person.role} desc={person.desc} git={person.git} linked={person.linked}/>
             ))}
