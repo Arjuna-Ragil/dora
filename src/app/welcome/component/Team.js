@@ -34,23 +34,15 @@ export default function Team(){
   return (
     <div className='min-h-screen h-full w-full flex flex-col items-center justify-center'>
       <div
-        className="h-full w-full flex flex-col items-center justify-center gap-10 sm:pt-25 pt-15"
-        id="team">
+        className="h-full w-full flex flex-col items-center justify-center gap-10" id="team">
         <div className="flex flex-col sm:items-center items-start justify-center gap-5 animate-slideDown [animation-timeline:view()]">
-          <p className="border rounded-full sm:py-3 py-2 px-6 md:text-base sm:text-sm text-xs">
-            The Humans Behind the Vision
-          </p>
-          <h2 className="md:text-5xl sm:text-4xl text-3xl font-semibold sm:text-center">
-            <span>Designing tools </span> 
-            <span className="text-primary">for people, by people</span>
-          </h2>
+          <h2 className="md:text-5xl sm:text-4xl text-3xl font-semibold sm:text-center"> Dibangun Bareng, Buat Lokal </h2>
           <p className="md:text-2xl sm:text-sm text-xs font-medium sm:text-center md:px-5 lg:px-40">
-            We’re a small multidisciplinary team of planners, engineers, and
-            designers crafting AI-powered tools to make regional planning
-            faster, smarter, and more human-centered.
+            Kami adalah tim yang percaya kalau dukung UMKM itu bukan cuma soal belanja, tapi soal tumbuh bareng. 
+            Yuk kenalan sama orang-orang di balik web ini!
           </p>
         </div>
-        <div className="h-full w-full grid md:grid-cols-3 gap-10">
+        <div className="h-125 w-full grid md:grid-cols-3 gap-10 p-5">
           {team.map((person) => (
             <TeamCard key={person.name} nama={person.name} shadow={person.shadow} role={person.role} desc={person.desc} git={person.git} linked={person.linked}/>
           ))}
