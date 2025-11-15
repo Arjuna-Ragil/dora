@@ -6,10 +6,7 @@ export default function Footer(){
     <div className='w-full flex flex-col md:pt-10 px-0 pt-10 pb-2 rounded-2xl items-center justify-center md:gap-15 gap-8'>
         <div className='w-full grid grid-cols-3 lg:px-15 px-5 sm:px-9 md:px-12 items-center justify-between max-md:gap-5'>
             <div className='w-full flex flex-col items-start gap-3 col-span-2'>
-                    <div className='h-30 w-auto relative aspect-square'>
-                        <Image src="/doraLogo.svg" alt="Planix Logo" fill/>
-                    </div>
-                    <h2 className='text-xl md:text-5xl mt-2  font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent'>Dora</h2>
+                <h2 className='text-xl md:text-5xl mt-2  font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent'>Dora</h2>
                 <p className='text-xs lg:text-2xl md:text-lg text-left font-medium text-text'>Dukung UMKM Lokal, Mulai dari Sekitar Kita</p>
             </div>
 
