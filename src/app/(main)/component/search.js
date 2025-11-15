@@ -90,7 +90,7 @@ export default function Search() {
             <div className="sticky top-0 bg-white z-20 shadow-md border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     
-                    <h1 className="text-3xl sm:text-4xl font-semibold text-[#034ED2] mb-4">
+                    <h1 className="text-3xl sm:text-4xl font-semibold text-primary mb-4">
                         Dora Menu
                     </h1>
                     
@@ -102,7 +102,7 @@ export default function Search() {
                                 type="text" 
                                 placeholder="Cari toko, menu, atau kategori..." 
                                 className={`w-full bg-gray-50 text-base border border-gray-300 rounded-lg pl-12 pr-4 py-2.5 
-                                           focus:ring-[#034ED2] focus:border-[#034ED2] transition duration-150`}
+                                           focus:ring-primary focus:border-primary transition duration-150`}
                                 value={searchQuery}
                                 onChange={(e) => setSearchQuery(e.target.value)}
                             />
@@ -112,7 +112,7 @@ export default function Search() {
                             
                             <button 
                                 className={`flex items-center justify-center gap-1.5 px-3 sm:px-4 py-2 rounded-lg font-semibold text-sm sm:text-base border transition-all duration-200 ${
-                                    sortBy ? `bg-[#034ED2] text-white border-[#034ED2] hover:bg-[#033EAA]` : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
+                                    sortBy ? `bg-primary text-white border-primary hover:bg-[#033EAA]` : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
                                 }`}
                                 onClick={handleSortChange}
                             >
@@ -125,8 +125,8 @@ export default function Search() {
                                     value={filterCategory || ''}
                                     onChange={(e) => setFilterCategory(e.target.value || null)}
                                     className={`w-full appearance-none px-3 sm:px-4 py-2 rounded-lg font-semibold text-sm sm:text-base border cursor-pointer transition-all duration-200 pr-8 ${
-                                        filterCategory ? `bg-[#034ED2] text-white border-[#034ED2] hover:bg-[#033EAA]` : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
-                                    } focus:ring-[#034ED2] focus:outline-none`}
+                                        filterCategory ? `bg-primary text-white border-primary hover:bg-[#033EAA]` : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50'
+                                    } focus:ring-primary focus:outline-none`}
                                 >
                                     <option value="">Kategori</option>
                                     {uniqueCategories.map(cat => (
@@ -163,12 +163,12 @@ export default function Search() {
                                 </span>
                             )}
                             {filterCategory && (
-                                <span className={`px-3 py-1 bg-[${PRIMARY_COLOR}15] text-[#034ED2] rounded-full flex items-center gap-1`}>
+                                <span className={`px-3 py-1 bg-[${PRIMARY_COLOR}15] text-primary rounded-full flex items-center gap-1`}>
                                     Kategori: {filterCategory}
                                 </span>
                             )}
                             {sortBy && (
-                                <span className={`px-3 py-1 bg-[${PRIMARY_COLOR}15] text-[#034ED2] rounded-full flex items-center gap-1`}>
+                                <span className={`px-3 py-1 bg-[${PRIMARY_COLOR}15] text-primary rounded-full flex items-center gap-1`}>
                                     Urutan Harga: {sortBy === 'harga_asc' ? 'Termurah' : 'Termahal'}
                                 </span>
                             )}
@@ -204,7 +204,7 @@ export default function Search() {
                                 setSortBy(null);
                                 setFilterCategory(null);
                             }}
-                            className={`px-6 py-3 bg-[#034ED2] text-white rounded-lg font-semibold hover:bg-[#033EAA] transition-all duration-200 shadow-md`}
+                            className={`px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-[#033EAA] transition-all duration-200 shadow-md`}
                         >
                             Reset Semua Filter
                         </button>
