@@ -152,11 +152,11 @@
       "lokasi_sederhana": "Tepat di samping Pintu Doraemon (sebelah kiri).",
       "image": "https://firebasestorage.googleapis.com/v0/b/planix-2b1a8.firebasestorage.app/o/umkm-dora%2Fbatagor.jpg?alt=media&token=6d41029b-fc65-4188-816c-8dbe970ccb5b",
       "menu": [
-        {"nama": "Somay", "harga": "Tersedia"},
-        {"nama": "Batagor", "harga": "Tersedia"},
-        {"nama": "Batagor + Somay", "harga": "Tersedia"},
-        {"nama": "Batagor + Otak-otak", "harga": "Tersedia"},
-        {"nama": "Pempek", "harga": "Tersedia"}
+        {"nama": "Somay", "harga": 5},
+        {"nama": "Batagor", "harga": 5},
+        {"nama": "Batagor + Somay", "harga": 8},
+        {"nama": "Batagor + Otak-otak", "harga": 8},
+        {"nama": "Pempek", "harga": 10}
       ],
       "kontak": null
     },
