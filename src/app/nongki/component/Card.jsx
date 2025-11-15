@@ -9,7 +9,7 @@ export default function Card({ data }) {
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${data.image})` }} />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-black/10" />
+      <div className="absolute inset-0 bg-linear-to-t from-black/60 to-black/10" />
 
 
       {/* Favorite Button */}
