@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const RotatingBadge = () => {
   return (
-    <div className="relative flex items-center justify-center bg-kuning rounded-full w-[100px] h-[100px] cursor-pointer">
+    <div className="flex relative items-center justify-center bg-kuning rounded-full w-[100px] h-[100px] cursor-pointer">
       <svg
         className="absolute w-full h-full animate-spin-slow text-red-600"
         viewBox="0 0 100 100"
