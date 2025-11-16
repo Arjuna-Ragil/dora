@@ -5,8 +5,11 @@ import { useState } from "react";
 import { FiUser, FiSun, FiLogOut, FiMenu } from "react-icons/fi";
 import TopNavbar from "../../../component/TopNavbar.jsx";
 import bg_profile from "../../../assets/bg_profile.png";
+import { useRouter } from "next/navigation.js";
 
 export default function UserProfilePage() {
+  const router = useRouter()
+
   const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
@@ -37,7 +40,7 @@ export default function UserProfilePage() {
             </button>
           </div>
 
-          <button className="flex items-center gap-2 text-red-500 hover:underline text-sm">
+          <button onClick={() => router.push('/welcome')} className="flex items-center gap-2 text-red-500 hover:underline text-sm md:mt-5">
             <FiLogOut /> Log out
           </button>
         </aside>

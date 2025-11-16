@@ -1,11 +1,15 @@
+'use client'
+
 // src/app/favorites/page.js
 import Image from "next/image";
 import { IoHeartSharp } from "react-icons/io5";
 import TopNavbar from "../../../component/TopNavbar";
 import data from "../../data/data.json";
 import HeroSection from "./component/HeroSection";
+import { useRouter } from "next/navigation";
 
 export default function FavoritesPage() {
+  const router = useRouter();
   const toko = data.umkm_data;
 
   return (
@@ -51,7 +55,7 @@ export default function FavoritesPage() {
                 {place.deskripsi_singkat}
               </p>
 
-              <button className="w-full bg-blue-600 text-white text-sm py-2 rounded-lg hover:bg-blue-700 transition">
+              <button onClick={() => router.push(`/${place.umkm_id}`)} className="w-full bg-blue-600 text-white text-sm py-2 rounded-lg hover:bg-blue-700 transition">
                 Lihat Detail
               </button>
             </div>
