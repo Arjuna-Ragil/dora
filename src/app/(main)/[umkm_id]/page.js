@@ -54,7 +54,7 @@ export default async function UmkmDetailPage({ params }) {
 
            
           <div className="md:col-span-4 space-y-4 flex flex-col h-full">
-            <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 relative flex-grow ">
+            <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-sm border border-gray-200 relative grow ">
                <Link href="/" className="absolute top-4 left-4 z-10 p-2 bg-white rounded-full shadow-md transition hover:bg-gray-50">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -158,8 +158,8 @@ export default async function UmkmDetailPage({ params }) {
               </div>
             </div>
  
-            <div className="p-6 border border-[#034ED2] rounded-xl flex flex-col">
-              <h2 className="text-xl font-semibold text-[#034ED2] mb-4">
+            <div className="p-6 border border-primary rounded-xl flex flex-col">
+              <h2 className="text-xl font-semibold text-primary mb-4">
                 Menu:
               </h2>
 
@@ -170,7 +170,7 @@ export default async function UmkmDetailPage({ params }) {
                       <div className="flex items-start gap-2">
                         <span className="text-gray-600">{index + 1}.</span>
 
-                        <div className="flex-grow">
+                        <div className="grow">
                           <p className="text-gray-600">
                             <span>{item.nama}</span>
 
