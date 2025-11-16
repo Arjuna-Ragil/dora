@@ -16,6 +16,7 @@ Pengguna bisa menyimpan usaha yang kamu suka untuk gampang dikunjungi lagi nanti
 Gak mau ketinggalan diskon? Lihat promo paling fresh dari pelaku UMKM sekitar Pintu Doraemon, langsung update tiap hari.
 ## 👥 Spot Nongkrong Favorit
 Butuh tempat chill bareng temen? Temuin rekomendasi spot nongkrong lokal yang cozy dan ramah di kantong.
+
 ---
 # Tech Stack
 - React
