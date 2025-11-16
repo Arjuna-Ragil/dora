@@ -5,6 +5,7 @@ import { useState } from "react";
 import { FiUser, FiSun, FiLogOut, FiMenu } from "react-icons/fi";
 import TopNavbar from "../../../component/TopNavbar.jsx";
 import bg_profile from "../../../assets/bg_profile.png";
+import Link from "next/link.js";
 
 export default function UserProfilePage() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -14,42 +15,8 @@ export default function UserProfilePage() {
       {/* Top Navbar */}
       <TopNavbar />
 
-      {/* Mobile Toggle */}
-      <button
-        className="md:hidden flex items-center gap-2 p-4 text-gray-700"
-        onClick={() => setOpenSidebar(!openSidebar)}
-      >
-        <FiMenu size={22} /> Menu
-      </button>
-
       <div className="flex flex-1 mt-2">
-        {/* Sidebar */}
-        <aside
-          className={`fixed md:static top-0 left-0 h-full w-56 bg-white p-6 flex flex-col justify-between rounded-r-2xl shadow-md md:shadow-none transform md:translate-x-0 transition-transform duration-300 z-50
-          ${openSidebar ? "translate-x-0" : "-translate-x-full"}`}
-        >
-          <div className="space-y-5 text-gray-700 text-sm">
-            <button className="flex items-center gap-2 hover:text-blue-600">
-              <FiUser /> Profile
-            </button>
-            <button className="flex items-center gap-2 hover:text-blue-600">
-              <FiSun /> Theme
-            </button>
-          </div>
-
-          <button className="flex items-center gap-2 text-red-500 hover:underline text-sm">
-            <FiLogOut /> Log out
-          </button>
-        </aside>
-
-        {/* Overlay for mobile */}
-        {openSidebar && (
-          <div
-            onClick={() => setOpenSidebar(false)}
-            className="fixed inset-0 bg-black/30 md:hidden"
-          ></div>
-        )}
-
+        
         {/* Main Content */}
         <main className="flex-1 p-6 md:p-10">
           <div className="bg-white rounded-2xl shadow-md border overflow-hidden">
@@ -99,6 +66,14 @@ export default function UserProfilePage() {
                   />
                 </div>
               </form>
+              <div className="w-full mt-10 flex justify-end">
+                <Link href="/welcome">
+                  <button className="flex items-center gap-2 text-red-500 hover:underline text-sm hover:cursor-pointer">
+                    <FiLogOut /> Log out
+                  </button>
+                </Link>
+
+              </div>
             </div>
           </div>
         </main>
