@@ -45,13 +45,12 @@ export default async function UmkmDetailPage({ params }) {
   }
 
   return (
-    <>
-    <TopNavbar />
     <div className="h-screen bg-white flex flex-col">
+      <TopNavbar />
 
-      <div className="w-full p-6">
+      <div className="h-full w-full p-6">
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 flex-1">
+        <div className="h-full grid grid-cols-1 md:grid-cols-12 gap-6 flex-1">
 
            
           <div className="md:col-span-4 space-y-4 flex flex-col h-full">
@@ -62,7 +61,7 @@ export default async function UmkmDetailPage({ params }) {
                 </svg>
               </Link>
 
-              <div className="absolute inset-0  border-[#034ED2] border">
+              <div className="absolute inset-0  border-primary border">
                 {toko.image ? (
                   <Image
                   src={toko.image}
@@ -98,7 +97,7 @@ export default async function UmkmDetailPage({ params }) {
           <div className="md:col-span-8 flex flex-col">
  
             <div className="space-y-5 shrink-0 mb-4">
-              <div className="p-6 border border-[#034ED2] rounded-xl">
+              <div className="p-6 border border-primary rounded-xl">
                 <div className="flex justify-between items-start">
                   <span className="text-xs font-semibold px-3 py-1.5 bg-blue-50 text-blue-600 rounded-full">
                     {toko.kategori}
@@ -109,7 +108,7 @@ export default async function UmkmDetailPage({ params }) {
                     />
                 </div>
 
-                <h1 className="text-4xl font-semibold text-[#034ED2] mb-3">
+                <h1 className="text-4xl font-semibold text-primary mb-3">
                   {toko.nama_toko}
                 </h1>
 
@@ -119,20 +118,20 @@ export default async function UmkmDetailPage({ params }) {
 
                 <div className="text-sm text-gray-500 space-y-1">
                   <p className="flex items-start">
-                    <MapPin className="h-4 w-4 text-[#034ED2] mr-1 mt-0.5" />
+                    <MapPin className="h-4 w-4 text-primary mr-1 mt-0.5" />
                     <span>{toko.lokasi_sederhana}</span>
                   </p>
 
                   {toko.kontak && (
                     <p className="flex items-start">
-                      <Phone className="h-4 w-4 text-[#034ED2] mr-1 mt-0.5" />
+                      <Phone className="h-4 w-4 text-primary mr-1 mt-0.5" />
                       <span>Buka setiap hari, {toko.kontak}</span>
                     </p>
                   )}
                 </div>
 
                 {toko.nama_toko === 'Tukang Roti' && (
-                  <div className="bg-white border-2 border-blue-500 rounded-2xl p-4 shadow-sm">
+                  <div className="bg-white border-2 border-blue-500 rounded-2xl p-4 shadow-sm mt-3">
                     <h3 className="text-blue-600 font-bold text-base mb-2">
                       Promo of the day
                     </h3>
@@ -209,6 +208,5 @@ export default async function UmkmDetailPage({ params }) {
         </div>
       </div>
     </div>
-   </>
   )
 }

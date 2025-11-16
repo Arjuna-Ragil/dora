@@ -12,11 +12,6 @@ export default function HomeBg(){
     const canvasRef = useRef(null)
 
     useEffect(() => {
-        if (history.scrollRestoration) {
-            history.scrollRestoration = 'manual';
-        }
-        window.scrollTo(0, 0);
-
         let scene, camera, renderer, animationFrameId, control;
         let doorMesh = null
         let cameraStartX = 30
