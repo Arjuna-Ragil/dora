@@ -24,19 +24,19 @@ export default function TopNavbar() {
     <header className="w-full sticky top-0 z-50 bg-white border-b shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
 
-        {/* Logo */}
-        <div className="text-xl font-bold text-blue-600">
-          <Link href="/">
-            <SvgIcon src={logo} />
-          </Link>
-        </div>
-
         {/* Mobile Button */}
         <div
           className="md:hidden text-gray-700"
           onClick={() => setOpen(true)}
         >
           <HiOutlineBars3 size={28} />
+        </div>
+
+        {/* Logo */}
+        <div className="text-xl font-bold text-blue-600">
+          <Link href="/">
+            <SvgIcon src={logo} />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
@@ -65,7 +65,7 @@ export default function TopNavbar() {
         {/* User Icon */}
         <Link href="/profile">
           <FaRegUserCircle 
-            className="hidden md:block text-blue-600 w-6 h-6 cursor-pointer" 
+            className="block text-blue-600 w-6 h-6 cursor-pointer" 
           />
         </Link>
       </div>

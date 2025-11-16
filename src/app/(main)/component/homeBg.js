@@ -1,9 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from "react"
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
-import { Reflector } from 'three/examples/jsm/objects/Reflector.js';
 import * as THREE from 'three';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -14,11 +12,6 @@ export default function HomeBg(){
     const canvasRef = useRef(null)
 
     useEffect(() => {
-        if (history.scrollRestoration) {
-            history.scrollRestoration = 'manual';
-        }
-        window.scrollTo(0, 0);
-
         let scene, camera, renderer, animationFrameId, control;
         let doorMesh = null
         let cameraStartX = 30
@@ -68,21 +61,21 @@ export default function HomeBg(){
                     });
 
                     tl.to(camera.position, {
-                        x: 0,
+                        x: -3,
                         duration: 3,
                         ease: "none"
                     }, "<");
 
                     //spot
                     tl.to(camera.position, {
-                        x: -15,
+                        x: -18,
                         duration: 3,
                         ease: "none"
                     });
 
                     //promo
                     tl.to(camera.position, {
-                        x: -26,
+                        x: -31,
                         duration: 3,
                         ease: "none"
                     });
@@ -108,8 +101,6 @@ export default function HomeBg(){
             };
 
             scene.background = new THREE.Color(0xFFFFFF);
-
-            //control = new OrbitControls(camera, renderer.domElement); //orbit control
 
             const ambientLight = new THREE.AmbientLight(0xFFFFFF, 1)
             scene.add(ambientLight)
