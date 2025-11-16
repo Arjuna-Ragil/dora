@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![DORA](https://res.cloudinary.com/djnxdkqyz/image/upload/v1763257068/Screenshot_2025-11-16_075420_ke1yil.png)
+# DORA
+Dora adalah aplikasi berbasis web yang akan membantumu melihat semua umkm yang berada di Pintu Doraemon UIN Jakarta. Lokasi ini cukup dikenal oleh mahasiswa UIN Jakarta untuk mencari makanan maupun minuman. bukan hanya tempat untuk mengisi perut tapi juga untuk mengisi kekosongan jiwa dengan berkumpul dengan teman-teman kampus untuk mengisi kekosangan hatimu. 
+## Tujuan
+Dora bertujuan untuk mendata dan menampilkan UMKM apa saja yang ada di lokasi dan dengan ini akan memudahkan mahasiswa untuk mencari apa yang mereka inginkan. tidak perlu untuk mondar-mandir hanya untuk mencari makanan dan minuman yang ada. Pengguna bisa langsung melihat UMKM apa saja yang sudah terdata. oleh karena itu aplikasi ini akan mempermudah Pengguna untuk mencari Pengisi Perut Kamu.
+## Pengguna
+- Mahasiswa
+- Dosen
+- Pewagai UIN Jakarta
+- dan semua Masyarakat Sekitar UIN Jakarta
+---
+# Key Features
+## ⭐ Favoritkan UMKM
+Pengguna bisa menyimpan usaha yang kamu suka untuk gampang dikunjungi lagi nanti.
+## 🏷️ Promo of The Day
+Gak mau ketinggalan diskon? Lihat promo paling fresh dari pelaku UMKM sekitar Pintu Doraemon, langsung update tiap hari.
+## 👥 Spot Nongkrong Favorit
+Butuh tempat chill bareng temen? Temuin rekomendasi spot nongkrong lokal yang cozy dan ramah di kantong.
+---
+# Tech Stack
+- React
+- TailwindCSS
+- Nextjs
+---
+# Team
+- [Arjuna Ragil Putera](https://github.com/Arjuna-Ragil)
+- [Sarah Fajriah Rahmah](https://github.com/s-erzv)
+- [Hazri Agung Endarya](https://github.com/HazriAE)
