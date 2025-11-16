@@ -8,15 +8,12 @@ import bg_profile from "../../../assets/bg_profile.png";
 import Link from "next/link.js";
 
 export default function UserProfilePage() {
-  const [openSidebar, setOpenSidebar] = useState(false);
-
   return (
     <div className="w-full min-h-screen flex flex-col bg-gray-50">
       {/* Top Navbar */}
       <TopNavbar />
 
       <div className="flex flex-1 mt-2">
-        
         {/* Main Content */}
         <main className="flex-1 p-6 md:p-10">
           <div className="bg-white rounded-2xl shadow-md border overflow-hidden">
