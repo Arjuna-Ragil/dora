@@ -25,7 +25,7 @@ export default function Team(){
       "name": "Hazri Agung Endarya",
       "shadow": "/hazriShadow.svg",
       "role": "Full-Stack Developer",
-      "desc": "isi aja nanti",
+      "desc": "No Words to describe..... Just Enjoy the Website :)",
       "git": "https://github.com/HazriAE",
       "linked": "https://www.linkedin.com/in/hazri-agung-endarya-41b688322/"
     },
