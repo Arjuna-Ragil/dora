@@ -1,13 +1,13 @@
 ![DORA](https://res.cloudinary.com/djnxdkqyz/image/upload/v1763257068/Screenshot_2025-11-16_075420_ke1yil.png)
 # DORA
-Dora adalah aplikasi berbasis web yang akan membantumu melihat semua umkm yang berada di Pintu Doraemon UIN Jakarta. Lokasi ini cukup dikenal oleh mahasiswa UIN Jakarta untuk mencari makanan maupun minuman. bukan hanya tempat untuk mengisi perut tapi juga untuk mengisi kekosongan jiwa dengan berkumpul dengan teman-teman kampus untuk mengisi kekosangan hatimu. 
+Dora adalah aplikasi berbasis web yang akan membantumu melihat semua umkm yang berada di Pintu Doraemon. Lokasi ini cukup dikenal oleh mahasiswa disekitar daerah Ciputat untuk mencari makanan maupun minuman. bukan hanya tempat untuk mengisi perut tapi juga untuk mengisi kekosongan jiwa dengan berkumpul dengan teman-teman kampus untuk mengisi kekosangan hatimu. 
 ## Tujuan
 Dora bertujuan untuk mendata dan menampilkan UMKM apa saja yang ada di lokasi dan dengan ini akan memudahkan mahasiswa untuk mencari apa yang mereka inginkan. tidak perlu untuk mondar-mandir hanya untuk mencari makanan dan minuman yang ada. Pengguna bisa langsung melihat UMKM apa saja yang sudah terdata. oleh karena itu aplikasi ini akan mempermudah Pengguna untuk mencari Pengisi Perut Kamu.
 ## Pengguna
 - Mahasiswa
 - Dosen
-- Pewagai UIN Jakarta
-- dan semua Masyarakat Sekitar UIN Jakarta
+- Pegawai
+- dan semua Masyarakat Sekitar Doraemon
 ---
 # Key Features
 ## ⭐ Favoritkan UMKM
