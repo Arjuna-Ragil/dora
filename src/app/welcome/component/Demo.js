@@ -7,7 +7,7 @@ export default function Demo(){
       <div className="h-full w-full grid lg:grid-cols-2 gap-10 lg:p-0 sm:p-10 px-3 py-4 animate-slideUp [animation-timeline:view()]"> 
         <iframe 
           className="aspect-video w-full rounded-2xl flex self-center" 
-          src="https://www.youtube.com/embed/0YiRmlDCCeg?si=sfbgqQMx0_JhcfIR" 
+          src="https://www.youtube.com/embed/9UvuVMGXUT8" 
           title="YouTube video player" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowFullScreen 
